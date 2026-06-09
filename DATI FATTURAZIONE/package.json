@@ -1,0 +1,10 @@
+{
+  "name": "top-eventi-store-form",
+  "version": "1.0.0",
+  "description": "Form conferma dati di fatturazione TOP EVENTI STORE: genera Excel anagrafica e invia via SMTP TopHost",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "^6.9.14",
+    "xlsx": "^0.18.5"
+  }
+}

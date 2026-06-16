@@ -106,6 +106,7 @@ exports.handler = async (event) => {
         Nuova conferma anagrafica — TOP EVENTI STORE
       </h2>
       <p><strong>N. Ordine/Preventivo:</strong> ${esc(String(d['N. Ordine/Preventivo']))}</p>
+      <p><strong>Split Payment:</strong> ${d['Split Payment'] === 'Sì' ? 'SÌ — scissione dei pagamenti (art. 17-ter)' : 'No'}</p>
       <p>In allegato il file <strong>${esc(fileName)}</strong> pronto da importare nel gestionale.</p>
       ${d['Note'] ? `<p><strong>Note cliente:</strong> ${esc(String(d['Note']))}</p>` : ''}
       <table style="border-collapse:collapse;width:100%;font-size:13px;">${righeHtml}</table>
